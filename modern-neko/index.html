@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neko Mailing | Newslettering per a col·lectius</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fdccc27bda.js" crossorigin="anonymous"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="public-home">
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="../Neko_Mailing_Logo_Blau_Verd.jpg" alt="Neko Mailing">
+                </a>
+                <div class="nav-actions">
+                    <select id="lang-select" style="background: transparent; border: 1px solid var(--glass-border); padding: 0.3rem; border-radius: 8px; cursor: pointer;">
+                        <option value="ca">CA</option>
+                        <option value="es">ES</option>
+                    </select>
+                    <a href="#" class="btn btn-secondary" data-t="nav_login"></a>
+                    <a href="#" class="btn btn-primary" data-t="register"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <div class="hero-content">
+                <h1 data-t="portal_name"></h1>
+                <p class="hero-intro" data-t="hero_intro"></p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary btn-lg" data-t="hero_primary" style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
+                    <a href="#" class="btn btn-secondary btn-lg" data-t="hero_secondary" style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
+                </div>
+                <p class="hero-signal" data-t="hero_signal" style="margin-bottom: 2rem; font-weight: 500;"></p>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <i class="fas fa-layer-group"></i><br>
+                        <span data-t="metric_one"></span>
+                    </div>
+                    <div class="metric-card">
+                        <i class="fas fa-users"></i><br>
+                        <span data-t="metric_two"></span>
+                    </div>
+                    <div class="metric-card">
+                        <i class="fas fa-chart-line"></i><br>
+                        <span data-t="metric_three"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visual-board">
+                <div class="visual-item visual-main">
+                    <img src="../nekoinici/img/email3.jpg" alt="Campaign Preview">
+                    <div class="visual-note">
+                        <small data-t="showcase_label"></small>
+                        <h3 data-t="showcase_title" style="font-size: 1.1rem; margin-top: 0.5rem; line-height: 1.4;"></h3>
+                    </div>
+                </div>
+                <div class="visual-item">
+                    <img src="../nekoinici/img/email2.jpg" alt="Visual Asset 1">
+                </div>
+                <div class="visual-item">
+                    <img src="../nekoinici/img/email.jpg" alt="Visual Asset 2">
+                </div>
+            </div>
+        </section>
+
+        <!-- Story / Features Section -->
+        <section class="story-teaser reveal" style="padding: 2rem 0; text-align: right;">
+            <p style="font-size: 1.6rem; color: var(--primary); font-weight: 500; max-width: 800px; margin-left: auto;" data-t="story_intro"></p>
+        </section>
+
+        <section class="story-grid">
+            <div class="story-card reveal">
+                <span class="badge" style="background: rgba(119, 207, 202, 0.2); color: var(--primary); padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Relat Principal</span>
+                <h2 data-t="story_card_1_title" style="margin: 1.5rem 0; font-size: 2.5rem; color: var(--primary); line-height: 1.2;"></h2>
+                <p data-t="story_card_1_desc" style="margin-bottom: 2rem; color: var(--text);"></p>
+                
+                <div class="feature-list" style="display: grid; gap: 1.5rem;">
+                    <div class="feature-item" style="display: flex; gap: 1rem;">
+                        <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <div>
+                            <strong data-t="feat_1_title" style="display: block; color: var(--primary);"></strong>
+                            <span data-t="feat_1_desc" style="font-size: 0.95rem;"></span>
+                        </div>
+                    </div>
+                    <div class="feature-item" style="display: flex; gap: 1rem;">
+                        <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <div>
+                            <strong data-t="feat_2_title" style="display: block; color: var(--primary);"></strong>
+                            <span data-t="feat_2_desc" style="font-size: 0.95rem;"></span>
+                        </div>
+                    </div>
+                    <div class="feature-item" style="display: flex; gap: 1rem;">
+                        <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <div>
+                            <strong data-t="feat_3_title" style="display: block; color: var(--primary);"></strong>
+                            <span data-t="feat_3_desc" style="font-size: 0.95rem;"></span>
+                        </div>
+                    </div>
+                    <div class="feature-item" style="display: flex; gap: 1rem;">
+                        <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <div>
+                            <strong data-t="feat_4_title" style="display: block; color: var(--primary);"></strong>
+                            <span data-t="feat_4_desc" style="font-size: 0.95rem;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-card reveal">
+                <span class="badge" style="background: rgba(255,255,255,0.1); color: var(--accent); padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Impacte i Creixement</span>
+                <h2 data-t="story_card_2_title" style="margin: 1.5rem 0; font-size: 2.5rem; color: var(--primary); line-height: 1.2;"></h2>
+                
+                <ul style="list-style: none; display: grid; gap: 1.5rem; margin-top: 2rem;">
+                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
+                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <span data-t="story_card_2_point_1" style="color: var(--primary)"></span>
+                    </li>
+                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
+                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <span data-t="story_card_2_point_2" style="color: var(--primary)"></span>
+                    </li>
+                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
+                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                        <span data-t="story_card_2_point_3" style="color: var(--primary)"></span>
+                    </li>
+                </ul>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.05);">
+                    <h3 data-t="cta_footer_title" style="margin-bottom: 1rem; color: var(--primary);"></h3>
+                    <p data-t="cta_footer_desc" style="opacity: 0.8; margin-bottom: 2rem; color: var(--text);"></p>
+                    <a href="#" class="btn btn-primary" data-t="hero_primary" style="font-weight: 800;"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #001a20; color: var(--white); padding: 6rem 0; margin-top: 4rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; align-items: start;">
+                <div>
+                    <img src="../nekoinici/img/neko_logo.png" alt="Neko" style="height: 60px; filter: brightness(0) invert(1); margin-bottom: 2rem;">
+                    <p style="opacity: 0.6; max-width: 400px; margin-bottom: 1rem;" data-t="hero_eyebrow"></p>
+                    <p style="font-size: 0.85rem; opacity: 0.5;" data-t="footer_rights"></p>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;" data-t="contact_title"></h4>
+                    <p style="margin-bottom: 0.5rem; opacity: 0.8;">Red Phone Events, S.L.</p>
+                    <a href="tel:933801052" style="display: block; color: white; text-decoration: none; margin-bottom: 0.5rem; opacity: 0.8;" data-t="contact_phone"></a>
+                    <a href="mailto:info@nekomailing.com" style="display: block; color: var(--accent); text-decoration: none; font-weight: 600;" data-t="contact_email"></a>
+                </div>
+
+                <div style="text-align: right;">
+                    <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-bottom: 2rem;">
+                        <a href="#" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.2); color: white;" data-t="nav_login"></a>
+                    </div>
+                    <img src="../nekoinici/img/logo_neko.png" alt="" style="height: 30px; opacity: 0.3;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
