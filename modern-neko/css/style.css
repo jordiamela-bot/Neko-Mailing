@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 4rem;
 }
@@ -96,8 +96,9 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    padding: 3rem 0 0;
+    padding: 1rem 0 0;
     align-items: stretch;
+    min-height: 450px;
 }
 
 .hero-content {
@@ -138,7 +139,7 @@ nav {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
     font-weight: 800;
     color: var(--white);
     line-height: 1.05;
@@ -180,7 +181,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
-    min-height: 500px;
 }
 
 .visual-item {
@@ -227,7 +227,8 @@ h1 {
 .story-teaser p {
     color: var(--white);
     opacity: 0.9;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
+    margin: 0;
 }
 
 .story-card {
@@ -247,6 +248,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 0 0 4rem;
+    min-height: 450px;
 }
 
 header {
