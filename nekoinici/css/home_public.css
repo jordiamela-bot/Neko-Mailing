@@ -26,14 +26,14 @@ body.public-home #wrapper {
   overflow-x: hidden;
 }
 
-body.public-home #content > .container-fluid {
+body.public-home #content>.container-fluid {
   width: min(2000px, calc(100% - 64px));
   max-width: none;
   padding: 0 0 4.5rem;
 }
 
-body.public-home #content > .container-fluid > .row:nth-child(1),
-body.public-home #content > .container-fluid > .row:nth-child(2) {
+body.public-home #content>.container-fluid>.row:nth-child(1),
+body.public-home #content>.container-fluid>.row:nth-child(2) {
   display: none !important;
 }
 
@@ -255,13 +255,7 @@ body.public-home .landing-copy {
   gap: 1.1rem;
   min-height: 620px;
   grid-template-rows:
-    auto
-    minmax(38px, auto)
-    minmax(94px, auto)
-    minmax(112px, auto)
-    auto
-    minmax(62px, auto)
-    auto;
+    auto minmax(38px, auto) minmax(94px, auto) minmax(112px, auto) auto minmax(62px, auto) auto;
   align-content: start;
 }
 
@@ -341,7 +335,7 @@ body.public-home .auth-result-message p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.75;
-  color: rgba(0, 54, 68, 0.76);
+  color: var(--home-text);
 }
 
 body.public-home .landing-intro {
@@ -407,7 +401,7 @@ body.public-home .landing-metric {
   background: linear-gradient(145deg, rgba(119, 207, 202, 0.12), rgba(255, 255, 255, 0.72));
   border: 1px solid rgba(119, 207, 202, 0.26);
   border-radius: 22px;
-  color: var(--home-deep);
+  color: var(--home-text);
 }
 
 body.public-home .landing-metric i {
@@ -523,11 +517,11 @@ body.public-home .story-card {
 }
 
 body.public-home .story-card-primary {
-  background: linear-gradient(165deg, rgba(255,255,255,0.95), rgba(119, 207, 202, 0.12));
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.95), rgba(119, 207, 202, 0.12));
 }
 
 body.public-home .story-card-secondary {
-  background: linear-gradient(165deg, rgba(255,255,255,0.95), rgba(214, 214, 214, 0.3));
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.95), rgba(214, 214, 214, 0.3));
 }
 
 body.public-home .story-card-head {
@@ -622,7 +616,7 @@ body.public-home .showcase-tile span {
 }
 
 body.public-home .showcase-tile-accent {
-  background: linear-gradient(145deg, rgba(119, 207, 202, 0.22), rgba(255,255,255,0.88));
+  background: linear-gradient(145deg, rgba(119, 207, 202, 0.22), rgba(255, 255, 255, 0.88));
 }
 
 body.public-home .showcase-tile-dark {
@@ -666,7 +660,7 @@ body.public-home .auth-points li {
   padding: 0.95rem 1rem;
   border-radius: 22px;
   background: rgba(119, 207, 202, 0.1);
-  color: rgba(0, 54, 68, 0.82);
+  color: var(--home-text);
 }
 
 body.public-home .auth-points i {
@@ -877,6 +871,7 @@ body.public-home A.cookie_anchor:ACTIVE {
 }
 
 @media (max-width: 1080px) {
+
   body.public-home .landing-hero,
   body.public-home .landing-showcase,
   body.public-home .auth-shell,
@@ -925,7 +920,7 @@ body.public-home A.cookie_anchor:ACTIVE {
 }
 
 @media (max-width: 760px) {
-  body.public-home #content > .container-fluid {
+  body.public-home #content>.container-fluid {
     width: min(100%, calc(100% - 24px));
   }
 
@@ -1003,6 +998,7 @@ body.public-home A.cookie_anchor:ACTIVE {
 }
 
 @media (max-width: 560px) {
+
   body.public-home .public-nav-actions,
   body.public-home .landing-actions,
   body.public-home .auth-inline-actions {

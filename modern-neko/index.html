@@ -1,9 +1,51 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neko Mailing | Newslettering per a col·lectius</title>
+    <title data-t="platform_heading"></title>
+    <meta name="description" data-t-content="hero_eyebrow">
+    <meta name="keywords"
+        content="email marketing associacions, newsletter col·lectius, mailing entitats, gestió mailing multiusuari, software mailing associatiu, alternativa mailchimp associacions">
+    <link rel="canonical" href="https://nekomailing.com/modern-neko/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nekomailing.com/">
+    <meta property="og:title" data-t="platform_heading">
+    <meta property="og:description" data-t-content="hero_intro">
+    <meta property="og:image" content="https://nekomailing.com/modern-neko/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nekomailing.com/">
+    <meta property="twitter:title" data-t="platform_heading">
+    <meta property="twitter:description" data-t-content="hero_intro">
+    <meta property="twitter:image" content="https://nekomailing.com/modern-neko/img/og-image.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Neko Mailing",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "description": "Plataforma d'email màrqueting especialitzada per a associacions, col·lectius i federacions amb control multiusuari i gestió de crèdits.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Neko Technologies"
+      }
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +54,44 @@
     <script src="https://kit.fontawesome.com/fdccc27bda.js" crossorigin="anonymous"></script>
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../Favicon.png">
 </head>
+
 <body class="public-home">
     <header>
         <div class="container">
-            <nav>
-                <a href="#" class="logo">
-                    <img src="../Neko_Mailing_Logo_Blau_Verd.jpg" alt="Neko Mailing">
+            <nav
+                style="display: flex; align-items: center; justify-content: space-between; height: 100px; position: relative;">
+                <a href="#" class="logo" style="text-decoration: none;" aria-label="Neko Mailing">
+                    <img src="../Neko_Mailing_Logo_Blau_Verd.jpg" alt="Neko Mailing" style="height: 60px;">
                 </a>
-                <div class="nav-actions">
-                    <select id="lang-select" style="background: transparent; border: 1px solid var(--glass-border); padding: 0.3rem; border-radius: 8px; cursor: pointer;">
-                        <option value="ca">CA</option>
-                        <option value="es">ES</option>
-                    </select>
-                    <a href="#" class="btn btn-secondary" data-t="nav_login"></a>
-                    <a href="#" class="btn btn-primary" data-t="register"></a>
+
+                <div class="header-title"
+                    style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 100%; max-width: 500px; pointer-events: none;">
+                    <small data-t="platform_label"
+                        style="font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.04em; line-height: 1.2; text-transform: uppercase; display: block;"></small>
+                </div>
+
+                <div class="nav-actions" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <a href="#footer" data-t="nav_contact"
+                        style="text-decoration: none; color: var(--primary); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;"></a>
+
+                    <div class="lang-wrapper"
+                        style="display: flex; align-items: center; gap: 0.5rem; background: rgba(0, 54, 68, 0.05); padding: 0.3rem 0.8rem; border-radius: 999px;">
+                        <i class="fas fa-globe" style="color: var(--primary); opacity: 0.7;"></i>
+                        <select id="lang-select"
+                            style="background: transparent; border: none; padding: 0.2rem; cursor: pointer; font-weight: 600; color: var(--primary); outline: none;">
+                            <option value="ca">CA</option>
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                            <option value="pt">PT</option>
+                            <option value="fr">FR</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </div>
+                    <a href="#login" class="btn btn-secondary" data-t="nav_login"></a>
+                    <a href="#register" class="btn btn-primary" data-t="register"></a>
                 </div>
             </nav>
         </div>
@@ -36,11 +101,13 @@
         <!-- Hero Section -->
         <section class="hero reveal">
             <div class="hero-content">
-                <h1 data-t="portal_name"></h1>
+                <h1 data-t="platform_heading"></h1>
                 <p class="hero-intro" data-t="hero_intro"></p>
                 <div class="hero-actions">
-                    <a href="#" class="btn btn-primary btn-lg" data-t="hero_primary" style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
-                    <a href="#" class="btn btn-secondary btn-lg" data-t="hero_secondary" style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
+                    <a href="#register" class="btn btn-primary btn-lg" data-t="hero_primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
+                    <a href="#login" class="btn btn-secondary btn-lg" data-t="hero_secondary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem;"></a>
                 </div>
                 <p class="hero-signal" data-t="hero_signal" style="margin-bottom: 2rem; font-weight: 500;"></p>
                 <div class="metrics">
@@ -64,7 +131,8 @@
                     <img src="../nekoinici/img/email3.jpg" alt="Campaign Preview">
                     <div class="visual-note">
                         <small data-t="showcase_label"></small>
-                        <h3 data-t="showcase_title" style="font-size: 1.1rem; margin-top: 0.5rem; line-height: 1.4;"></h3>
+                        <h3 data-t="showcase_title" style="font-size: 1.1rem; margin-top: 0.5rem; line-height: 1.4;">
+                        </h3>
                     </div>
                 </div>
                 <div class="visual-item">
@@ -77,17 +145,20 @@
         </section>
 
         <!-- Story / Features Section -->
-        <section class="story-teaser reveal" style="padding: 0.5rem 0; text-align: right;">
-            <p style="font-size: 1.6rem; color: var(--white); font-weight: 500; max-width: 800px; margin-left: auto;" data-t="story_intro"></p>
+        <section class="story-teaser reveal">
+            <p data-t="story_intro"></p>
         </section>
 
         <section class="story-grid">
-            <div class="story-card reveal">
-                <span class="badge" style="background: rgba(119, 207, 202, 0.2); color: var(--primary); padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Relat Principal</span>
-                <h2 data-t="story_card_1_title" style="margin: 1.5rem 0; font-size: 2.8rem; color: var(--primary); line-height: 1.2;"></h2>
-                <p data-t="story_card_1_desc" style="margin-bottom: 2rem; color: var(--text);"></p>
-                
-                <div class="feature-list" style="display: grid; gap: 1.5rem;">
+            <div class="story-card horizontal reveal">
+                <div>
+
+                    <h2 data-t="story_card_1_title"
+                        style="margin: 1.5rem 0; font-size: 2.8rem; color: var(--primary); line-height: 1.2;"></h2>
+                    <p data-t="story_card_1_desc" style="margin-bottom: 2rem; color: var(--text);"></p>
+                </div>
+                <div class="feature-list"
+                    style="display: grid; gap: 1.5rem; background: rgba(119, 207, 202, 0.05); padding: 2.5rem; border-radius: 24px; border: 1px solid rgba(119, 207, 202, 0.1);">
                     <div class="feature-item" style="display: flex; gap: 1rem;">
                         <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
                         <div>
@@ -109,39 +180,244 @@
                             <span data-t="feat_3_desc" style="font-size: 0.95rem;"></span>
                         </div>
                     </div>
-                    <div class="feature-item" style="display: flex; gap: 1rem;">
-                        <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.3rem;"></i>
-                        <div>
-                            <strong data-t="feat_4_title" style="display: block; color: var(--primary);"></strong>
-                            <span data-t="feat_4_desc" style="font-size: 0.95rem;"></span>
+                </div>
+            </div>
+
+            <div class="story-card horizontal reveal"
+                style="background: linear-gradient(165deg, #ffffff, rgba(0, 54, 68, 0.02));">
+                <div>
+
+                    <h2 data-t="story_card_2_title"
+                        style="margin: 1.5rem 0; font-size: 2.8rem; color: var(--primary); line-height: 1.2;"></h2>
+                    <ul style="list-style: none; display: grid; gap: 1.5rem; margin-top: 2rem;">
+                        <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
+                            <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                            <span data-t="story_card_2_point_1" style="color: var(--text)"></span>
+                        </li>
+                        <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
+                            <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                            <span data-t="story_card_2_point_2" style="color: var(--text)"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    style="padding: 3rem; background: var(--primary); color: white; border-radius: 32px; box-shadow: 0 20px 50px rgba(0, 54, 68, 0.15);">
+                    <h3 data-t="cta_footer_title" style="margin-bottom: 1rem; color: white; font-size: 1.8rem;"></h3>
+                    <p data-t="cta_footer_desc"
+                        style="opacity: 0.8; margin-bottom: 2.5rem; color: rgba(255,255,255,0.7);"></p>
+                    <a href="#register" class="btn btn-primary btn-lg" data-t="hero_primary"
+                        style="background: var(--accent); color: var(--primary); font-weight: 800; display: inline-block; padding: 1.2rem 2.5rem; border: 0;"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content Sections (Modules on dark background following corporate pattern) -->
+        <section id="per-a-qui" class="solution-section reveal">
+            <div class="story-card">
+                <div style="text-align: center; max-width: 850px; margin: 0 auto 2.5rem auto;">
+                    <h2 data-t="title_for_who" style="margin-bottom: 1rem;"></h2>
+                    <p data-t="intro_for_who" style="font-size: 1.15rem;"></p>
+                </div>
+                <div class="target-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div class="glass-card"
+                        style="padding: 2rem; text-align: center; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                        <i class="fas fa-users fa-2xl"
+                            style="color: var(--accent); margin-bottom: 1.2rem; display: block;"></i>
+                        <h4 data-t="target_1_title" style="color: var(--primary); margin: 0;"></h4>
+                    </div>
+                    <div class="glass-card"
+                        style="padding: 2rem; text-align: center; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                        <i class="fas fa-sitemap fa-2xl"
+                            style="color: var(--accent); margin-bottom: 1.2rem; display: block;"></i>
+                        <h4 data-t="target_2_title" style="color: var(--primary); margin: 0;"></h4>
+                    </div>
+                    <div class="glass-card"
+                        style="padding: 2rem; text-align: center; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                        <i class="fas fa-user-tie fa-2xl"
+                            style="color: var(--accent); margin-bottom: 1.2rem; display: block;"></i>
+                        <h4 data-t="target_3_title" style="color: var(--primary); margin: 0;"></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="com-funciona" class="solution-section reveal">
+            <div class="story-card">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 data-t="title_how_works"></h2>
+                </div>
+                <div class="model-visual"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch;">
+                    <div class="card-modern shadow-sm"
+                        style="background: rgba(0, 54, 68, 0.03); padding: 2.5rem; border-radius: 24px; border: 1px solid rgba(0, 54, 68, 0.05);">
+                        <div
+                            style="background: var(--accent); color: var(--primary); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 999px; font-weight: 800; font-size: 0.75rem; margin-bottom: 1rem;">
+                            PARTNER</div>
+                        <h3 data-t="partner_control_title" style="margin-bottom: 1rem; color: var(--primary);"></h3>
+                        <ul class="feature-list" style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8rem; display: flex; gap: 0.8rem; color: var(--text);"><i
+                                    class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.2rem;"></i>
+                                <span data-t="partner_point_1"></span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; gap: 0.8rem; color: var(--text);"><i
+                                    class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.2rem;"></i>
+                                <span data-t="partner_point_2"></span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; gap: 0.8rem; color: var(--text);"><i
+                                    class="fas fa-check-circle" style="color: var(--accent); margin-top: 0.2rem;"></i>
+                                <span data-t="partner_point_3"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-modern shadow-sm"
+                        style="background: rgba(0, 54, 68, 0.03); padding: 2.5rem; border-radius: 24px; border: 1px solid rgba(0, 54, 68, 0.05);">
+                        <div
+                            style="background: rgba(0, 54, 68, 0.1); color: var(--primary); display: inline-block; padding: 0.4rem 1.2rem; border-radius: 999px; font-weight: 800; font-size: 0.75rem; margin-bottom: 1rem;">
+                            USUARIS</div>
+                        <h3 data-t="users_autonomy_title" style="margin-bottom: 1rem; color: var(--primary);"></h3>
+                        <ul class="feature-list" style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8rem; display: flex; gap: 0.8rem; color: var(--text);"><i
+                                    class="fas fa-paper-plane" style="color: var(--accent); margin-top: 0.2rem;"></i>
+                                <span data-t="user_point_1"></span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; gap: 0.8rem; color: var(--text);"><i
+                                    class="fas fa-paper-plane" style="color: var(--accent); margin-top: 0.2rem;"></i>
+                                <span data-t="user_point_2"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="control" class="solution-section reveal">
+            <div class="story-card">
+                <div class="grid-2" style="align-items: center; gap: 3rem;">
+                    <div>
+                        <h2 data-t="title_control" style="margin-bottom: 1rem;"></h2>
+                        <p data-t="desc_control" style="font-size: 1.1rem; margin-bottom: 2.5rem;"></p>
+                    </div>
+                    <div class="control-features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="glass-card"
+                            style="padding: 1.2rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-id-card" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <h5 data-t="control_feat_1" style="color: var(--primary); font-size: 0.95rem;"></h5>
+                        </div>
+                        <div class="glass-card"
+                            style="padding: 1.2rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-clock" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <h5 data-t="control_feat_2" style="color: var(--primary); font-size: 0.95rem;"></h5>
+                        </div>
+                        <div class="glass-card"
+                            style="padding: 1.2rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-database" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <h5 data-t="control_feat_3" style="color: var(--primary); font-size: 0.95rem;"></h5>
+                        </div>
+                        <div class="glass-card"
+                            style="padding: 1.2rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-eye" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <h5 data-t="control_feat_4" style="color: var(--primary); font-size: 0.95rem;"></h5>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="story-card reveal">
-                <span class="badge" style="background: rgba(255,255,255,0.1); color: var(--accent); padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Impacte i Creixement</span>
-                <h2 data-t="story_card_2_title" style="margin: 1.5rem 0; font-size: 2.8rem; color: var(--primary); line-height: 1.2;"></h2>
-                
-                <ul style="list-style: none; display: grid; gap: 1.5rem; margin-top: 2rem;">
-                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
-                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
-                        <span data-t="story_card_2_point_1" style="color: var(--primary)"></span>
-                    </li>
-                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
-                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
-                        <span data-t="story_card_2_point_2" style="color: var(--primary)"></span>
-                    </li>
-                    <li style="display: flex; gap: 1rem; font-size: 1.1rem;">
-                        <i class="fas fa-arrow-right" style="color: var(--accent); margin-top: 0.3rem;"></i>
-                        <span data-t="story_card_2_point_3" style="color: var(--primary)"></span>
-                    </li>
-                </ul>
+        <section id="entregabilitat" class="solution-section reveal">
+            <div class="story-card">
+                <div style="text-align: center;">
+                    <h2 data-t="title_delivery" style="margin-bottom: 2rem;"></h2>
+                    <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;">
+                        <div style="max-width: 180px;">
+                            <i class="fas fa-inbox fa-2x" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <p data-t="del_point_1"
+                                style="font-weight: 700; color: var(--primary); font-size: 0.95rem;"></p>
+                        </div>
+                        <div style="max-width: 180px;">
+                            <i class="fas fa-shield-alt fa-2x" style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <p data-t="del_point_2"
+                                style="font-weight: 700; color: var(--primary); font-size: 0.95rem;"></p>
+                        </div>
+                        <div style="max-width: 180px;">
+                            <i class="fas fa-check-double fa-2x"
+                                style="color: var(--accent); margin-bottom: 0.8rem;"></i>
+                            <p data-t="del_point_3"
+                                style="font-weight: 700; color: var(--primary); font-size: 0.95rem;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <h3 data-t="cta_footer_title" style="margin-bottom: 1rem; color: var(--primary);"></h3>
-                    <p data-t="cta_footer_desc" style="opacity: 0.8; margin-bottom: 2rem; color: var(--text);"></p>
-                    <a href="#" class="btn btn-primary" data-t="hero_primary" style="font-weight: 800;"></a>
+        <section id="integracions" class="solution-section reveal">
+            <div class="story-card">
+                <div class="grid-2" style="align-items: center; gap: 3rem;">
+                    <div style="order: 2;">
+                        <h2 data-t="title_integrations" style="margin-bottom: 1rem;"></h2>
+                        <p data-t="desc_integrations" style="font-size: 1.1rem; margin-bottom: 2.5rem;"></p>
+                    </div>
+                    <div style="order: 1; display: grid; gap: 0.8rem;">
+                        <div class="glass-card"
+                            style="display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1.5rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-plug" style="color: var(--accent);"></i>
+                            <span data-t="int_1"
+                                style="font-weight: 600; color: var(--primary); font-size: 0.9rem;"></span>
+                        </div>
+                        <div class="glass-card"
+                            style="display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1.5rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-sync" style="color: var(--accent);"></i>
+                            <span data-t="int_2"
+                                style="font-weight: 600; color: var(--primary); font-size: 0.9rem;"></span>
+                        </div>
+                        <div class="glass-card"
+                            style="display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1.5rem; background: rgba(0, 54, 68, 0.03); border: 1px solid rgba(0, 54, 68, 0.08);">
+                            <i class="fas fa-code" style="color: var(--accent);"></i>
+                            <span data-t="int_3"
+                                style="font-weight: 600; color: var(--primary); font-size: 0.9rem;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problemes" class="solution-section reveal">
+            <div class="story-card">
+                <div style="text-align: center; margin-bottom: 2.5rem;">
+                    <h2 data-t="title_problems" style="margin: 0;"></h2>
+                </div>
+                <div
+                    style="background: rgba(0, 54, 68, 0.03); padding: 2.5rem; border-radius: 32px; border: 1px solid rgba(0, 54, 68, 0.05);">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem;">
+                        <div>
+                            <h4
+                                style="color: #ef4444; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-times-circle"></i> Abans
+                            </h4>
+                            <p data-t="prob_text" style="font-size: 0.95rem; line-height: 1.6; color: var(--text);"></p>
+                        </div>
+                        <div style="border-left: 1px solid rgba(0,0,0,0.05); padding-left: 2.5rem;">
+                            <h4
+                                style="color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-check-circle"></i> Amb Neko
+                            </h4>
+                            <p data-t="sol_text" style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="preus" class="solution-section reveal">
+            <div class="story-card">
+                <div style="text-align: center;">
+                    <h2 data-t="nav_pricing" style="margin-bottom: 1rem;"></h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2.5rem; font-weight: 500;">
+                        Consulta les nostres tarifes fetes a mida per al teu col·lectiu.</p>
+                    <a href="#footer" class="btn btn-primary btn-lg" data-t="contact_title"
+                        style="padding: 1rem 3rem; font-size: 1.1rem;"></a>
                 </div>
             </div>
         </section>
@@ -152,28 +428,95 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; align-items: start;">
                 <div>
-                    <img src="../nekoinici/img/neko_logo.png" alt="Neko" style="height: 60px; filter: brightness(0) invert(1); margin-bottom: 2rem;">
+                    <img src="../Logo_blanc.png" alt="Neko Mailing" style="height: 60px; margin-bottom: 2rem;">
                     <p style="opacity: 0.6; max-width: 400px; margin-bottom: 1rem;" data-t="hero_eyebrow"></p>
                     <p style="font-size: 0.85rem; opacity: 0.5;" data-t="footer_rights"></p>
                 </div>
-                
+
                 <div>
-                    <h4 style="color: var(--accent); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;" data-t="contact_title"></h4>
-                    <p style="margin-bottom: 0.5rem; opacity: 0.8;">Red Phone Events, S.L.</p>
-                    <a href="tel:933801052" style="display: block; color: white; text-decoration: none; margin-bottom: 0.5rem; opacity: 0.8;" data-t="contact_phone"></a>
-                    <a href="mailto:info@nekomailing.com" style="display: block; color: var(--accent); text-decoration: none; font-weight: 600;" data-t="contact_email"></a>
+                    <h4 style="color: var(--accent); margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;"
+                        data-t="contact_title"></h4>
+                    <p style="margin-bottom: 0.5rem; opacity: 0.8;">Neko Technologies</p>
+                    <p style="margin-bottom: 0.5rem; opacity: 0.8;">
+                        <a href="https://redphonetechnologies.com" target="_blank"
+                            style="color: white; text-decoration: none;">Red Phone Technologies</a>
+                    </p>
+                    <p style="margin-bottom: 1.5rem; opacity: 0.8;">
+                        <a href="https://redphoneevents.com" target="_blank"
+                            style="color: white; text-decoration: none;">Red Phone Events, S.L.</a>
+                    </p>
+                    <a href="tel:933801052"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 0.5rem; opacity: 0.8;"
+                        data-t="contact_phone"></a>
+                    <a href="mailto:info@nekomailing.com"
+                        style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-envelope"></i>
+                        <span data-t="contact_email"></span>
+                    </a>
                 </div>
 
                 <div style="text-align: right;">
                     <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-bottom: 2rem;">
-                        <a href="#" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.2); color: white;" data-t="nav_login"></a>
+                        <a href="#" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.2); color: white;"
+                            data-t="nav_login"></a>
                     </div>
-                    <img src="../nekoinici/img/logo_neko.png" alt="" style="height: 30px; opacity: 0.3;">
+
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Cookies Banner -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="container cookie-content">
+            <div id="cookie-main-view">
+                <div class="cookie-text">
+                    <p><span data-t="cookie_text"></span> <span data-t="cookie_more_info"></span> <a href="privacy.html"
+                            data-t="privacy_policy" class="cookie-link"></a>.</p>
+                </div>
+                <div class="cookie-actions">
+                    <button id="accept-cookies" class="btn btn-primary btn-sm" data-t="accept"></button>
+                    <button id="configure-cookies" class="btn btn-outline btn-sm" data-t="configure"></button>
+                    <button id="cancel-cookies" class="btn btn-outline btn-sm" data-t="cancel"
+                        style="opacity: 0.7;"></button>
+                </div>
+            </div>
+
+            <div id="cookie-config-view" style="display: none; width: 100%;">
+                <div class="cookie-config-grid">
+                    <div class="cookie-config-item">
+                        <div class="config-header">
+                            <input type="checkbox" id="cookie-necessary" checked disabled>
+                            <label for="cookie-necessary" data-t="cookie_cat_necessary"></label>
+                        </div>
+                        <p data-t="cookie_cat_necessary_desc"
+                            style="font-size: 0.8rem; margin: 0.5rem 0 0 1.8rem; opacity: 0.7;"></p>
+                    </div>
+                    <div class="cookie-config-item">
+                        <div class="config-header">
+                            <input type="checkbox" id="cookie-stats">
+                            <label for="cookie-stats" data-t="cookie_cat_stats"></label>
+                        </div>
+                        <p data-t="cookie_cat_stats_desc"
+                            style="font-size: 0.8rem; margin: 0.5rem 0 0 1.8rem; opacity: 0.7;"></p>
+                    </div>
+                    <div class="cookie-config-item">
+                        <div class="config-header">
+                            <input type="checkbox" id="cookie-marketing">
+                            <label for="cookie-marketing" data-t="cookie_cat_marketing"></label>
+                        </div>
+                        <p data-t="cookie_cat_marketing_desc"
+                            style="font-size: 0.8rem; margin: 0.5rem 0 0 1.8rem; opacity: 0.7;"></p>
+                    </div>
+                </div>
+                <div class="cookie-actions" style="margin-top: 1.5rem; justify-content: flex-end;">
+                    <button id="save-cookies" class="btn btn-primary btn-sm" data-t="save_prefs"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
